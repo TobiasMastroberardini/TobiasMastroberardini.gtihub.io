@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de tu Página</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+
+<body>
+    <header id="main-header">
+        <!-- Contenido del encabezado -->
+        <h1>CodeFirst Agency <img src="logo.png" alt="Logo de la empresa" class="logo"></h1>
+
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="back/templates/InicioSesion.phtml">Iniciar Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+
+
+        <section id="inicio">
+
+            <h1>Bienvenido a CodeFirst</h1>
+            <div class="intro">
+
+                <p id="frase-intro">Puedes darnos cualquier tarea. Estamos seguros que la vamos a demoler. No importa si
+                    alguna vez la
+                    hicimos, no importa
+                    si alguna vez hemos oído acerca de ella. Ni siquiera importa si nunca se ha hecho.</p>
+            </div>
+            <!-- Puedes agregar más contenido introductorio aquí -->
+        </section>
+
+
+
+        <section id="servicios">
+            <div class="into"></div>
+            <h2>Nuestros Servicios</h2>
+            </div>
+            <div class="cont">
+                <div class="servicio">
+                    <h3>Aplicaciones Web</h3>
+                    <p>Desarrollamos aplicaciones web a medida para satisfacer las necesidades específicas de tu
+                        negocio. Nuestro enfoque se
+                        centra en la creación de plataformas interactivas, escalables y seguras que brinden experiencias
+                        excepcionales a los
+                        usuarios. Desde aplicaciones de comercio electrónico hasta sistemas de gestión de contenidos
+                        (CMS), nuestro objetivo es
+                        ofrecer soluciones web innovadoras y funcionales que impulsen tu presencia en línea y aumenten
+                        la interacción con tus
+                        clientes</p>
+                </div>
+                <div class="servicio">
+                    <h3>Software para empresas</h3>
+                    <p>Soluciones innovadoras diseñadas para optimizar la gestión y mejorar la eficiencia operativa en
+                        entornos corporativos.
+                        Desde herramientas de contabilidad y recursos humanos hasta sistemas de gestión de clientes
+                        (CRM) y soluciones de
+                        análisis de datos, nuestro software está diseñado para ofrecer soluciones integrales que
+                        impulsen el crecimiento y la
+                        productividad en cualquier empresa.</p>
+                </div>
+
+                <div class="servicio">
+                    <h3>Otros</h3>
+                    <p>Puedes expresar necesidades, solicitudes o servicios personalizados que no estén detallados</p>
+                </div>
+            </div>
+            <!-- Puedes añadir más servicios -->
+        </section>
+
+
+
+
+        <section id="contacto">
+
+            <div class="intro">
+                <h2>Contacto</h2>
+                <p>Ponte en contacto con nosotros para obtener más información.</p>
+            </div>
+
+
+
+            <div class="cont">
+
+                <button id="toggle-form" onclick="toggleForm()">Mostrar formulario de contacto</button>
+                <form id="contacto-formulario" method="post">
+
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono: *</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div>
+                        <label for="servicios">Elige un servicio:</label>
+                        <select id="servicios" name="servicios">
+                            <option value="">Selecciona un servicio</option>
+                            <option value="Aplicaciones Web">Aplicaciones Web</option>
+                            <option value="Software para empresas">Software para empresas</option>
+                            <option value="Otro">Otro</option>
+                            <!-- Agrega más opciones para otros servicios ofrecidos -->
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="mensaje"></div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <!-- Contenido del pie de página -->
+    </footer>
+    <script src="js.js"></script>
+</body>
+
+</html>

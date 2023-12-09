@@ -1,0 +1,351 @@
+/* Estilos generales */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: #ffcc00;
+    padding: 10px;
+    /* Reducir el padding */
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    /* Cambiar a una disposición de fila (row) */
+    justify-content: space-between;
+    /* Distribuir los elementos horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+    transition: background-color 1s ease, color 1s ease;
+}
+
+header .logo {
+    width: 30px;
+    /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+    /* Ajusta la altura automáticamente */
+    margin-right: 10px;
+    /* Añade un margen entre el logo y el texto */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    /* Reducir el tamaño del título */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#main-header.scrolled {
+    background-color: #ffcc00;
+    color: #222;
+}
+
+nav ul li a.scrolled {
+    color: #222;
+}
+
+nav {
+    margin-left: 20px;
+    /* Agrega margen a la izquierda del nav */
+}
+
+
+
+nav ul li {
+    margin-right: 10px;
+    display: inline;
+    margin: 0 10px;
+    /* Espaciado entre los elementos del menú */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 1em;
+    /* Reducir el tamaño del texto del menú */
+    transition: color 0.5s ease;
+}
+
+nav ul li a:hover {
+    color: #555;
+
+    /* Color de resaltado del enlace al pasar el cursor */
+}
+
+
+
+
+main {
+    padding-top: 120px;
+    /* Ajuste para evitar superposiciones con el encabezado */
+}
+
+section {
+    padding: 50px 20px;
+    /* Ajuste del espaciado interno */
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Estilos específicos para secciones */
+
+#inicio {
+    background-color: #ffcc00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.intro {
+    max-width: 800px;
+    /* Ancho máximo para el contenido introductorio */
+}
+
+#inicio h1 {
+    color: #222;
+    font-size: 4em;
+}
+
+#inicio p {
+    font-size: 1.6em;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+#portafolio {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.proyecto {
+    border: 2px solid #ffcc00;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 0 30%;
+    /* Ancho variable, ocupando hasta un 30% del contenedor */
+    margin: 10px;
+    /* Espaciado entre los proyectos */
+}
+
+.proyecto h3 {
+    margin-top: 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.proyecto p {
+    color: #555;
+    font-size: 1.4em;
+}
+
+#servicios {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+    /* Ajuste del espaciado interno */
+}
+
+.servicio {
+    padding: 40px;
+    /* Reducción del padding */
+    border-bottom: 2px solid #ccc;
+    flex: 1 0 30%;
+    margin: 10px;
+
+}
+
+.servicio {
+    padding: 40px;
+    border-bottom: 2px solid #ccc;
+    flex: 1 0 30%;
+    /* Ancho variable, ocupando hasta un 30% del contenedor */
+    margin: 10px;
+    /* Espaciado entre los servicios */
+}
+
+.servicio h3 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.servicio p {
+    color: #555;
+    font-size: 1.4em;
+}
+
+#contacto {
+    background-color: #222;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#contacto h2 {
+    color: #ffcc00;
+    font-size: 4em;
+}
+
+#contacto p {
+    font-size: 1.6em;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.cont {
+    max-width: 800px;
+    /* Ancho máximo para el contenido del formulario */
+}
+
+#toggle-form {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    background-color: #ffcc00;
+    color: #222;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#toggle-form:hover {
+    background-color: #555;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Estilos para el formulario */
+/* Estilos para el formulario */
+#contacto-formulario {
+    color: #222;
+    display: none;
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: display 1s ease-in-out, opacity 1s ease-in-out, max-height 1s ease-in-out;
+}
+
+
+#contacto-formulario.mostrar {
+    display: block;
+    opacity: 1;
+    max-height: 500px;
+
+    /* Ajusta la altura máxima según sea necesario */
+}
+
+/* Estilos para los campos del formulario */
+#contacto-formulario input[type="text"],
+#contacto-formulario input[type="email"],
+#contacto-formulario input[type="tel"],
+#contacto-formulario select,
+#contacto-formulario textarea {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contacto-formulario :focus[type="text"],
+#contacto-formulario :focus[type="email"],
+#contacto-formulario :focus[type="tel"],
+#contacto-formulario select:focus,
+#contacto-formulario .mensaje :focus {
+    border-color: #ffcc00;
+    /* Cambia el color del borde cuando se enfoca */
+    box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+    /* Agrega un efecto de sombra */
+}
+
+#contacto-formulario button[type="submit"] {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #ffcc00;
+    font-size: 1.4em;
+    color: #222;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 3%;
+}
+
+#contacto-formulario button[type="submit"]:hover {
+    background-color: #555;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Estilos para el select */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #999;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    /* Ancho máximo del select */
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Estilos para el icono desplegable */
+select::-ms-expand {
+    display: none;
+}
+
+/* Estilos para las opciones del select */
+select option {
+    padding: 10px;
+}
+
+
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 1.4em;
+}
